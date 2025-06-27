@@ -44,8 +44,8 @@ body{
 .form{
     display: flex;
     flex-direction: column;
-    align-items: center; /*Centra verticalmente*/
-    justify-content: center; /*Centra verticalmente*/
+    align-items: center; 
+    justify-content: center; 
 }
 
 input{
@@ -69,9 +69,15 @@ button{
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+button:hover {
+    background-color: #3af456;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
 #lista-tareas {
-    width: 90%;
-    max-width: 100%;
+    width: 80%;
+    max-width: 75%;
     margin: 20px auto 0 auto;
     padding: 0;
     list-style: none;
@@ -89,4 +95,19 @@ button{
     border-radius: 10px;
     overflow-wrap: break-word;
     word-break: break-word;
+}
+
+#lista-tareas button {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    border: none;
+    transition: transform 0.2s ease;
+}
+
+#lista-tareas button:hover {
+    transform: scale(1.1);
 }
